@@ -1,6 +1,11 @@
 import logging
+import sys
+
+# Configure logging to stdout
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s"
+    format="%(asctime)s | %(levelname)s | %(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)]
 )
-logger=logging.getLogger("csv_app")
+
+logger = logging.getLogger("csv_app")
