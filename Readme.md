@@ -14,7 +14,7 @@ This is my implementation of the CSV upload and validation backend task. It hand
   - `GET /records`: Returns all valid processed records.
 
 ## Setup
-1. **Environment**: `python -m venv venv` and activate it.
+1. **Environment**: `python -m venv venv` and activate it `.\venv\Scripts\activate` .
 2. **Install**: `pip install -r requirements.txt`
 3. **Run**: `uvicorn app.main:app --reload` (Server runs at `http://127.0.0.1:8000`)
 
